@@ -18,6 +18,9 @@ public:
     virtual double calculate() {
         return left->calculate() / right->calculate();
     }
+    /**
+     * the distructor deletes the members- allocated memory heap
+     */
     ~Div() {
         delete (left);
         delete(right);

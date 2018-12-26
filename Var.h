@@ -14,6 +14,7 @@ public:
     Var(string st) {
         var = st;
     }
+    // the method returns the value from the symbolTable
     virtual double calculate() {
         return MapsHandler::getVarValue(var);
     }

@@ -3,8 +3,11 @@
 //
 
 #include "IfCommand.h"
-
+/**
+ * the moethod checks if he condition is true, and if it is - runs all the commands
+ */
 void IfCommand::doCommand(){
+	//If the Expression is true, go over the commands and excute them
     if (isTrue()) {
         for (Expression* c: commands) {
             c->calculate();
@@ -12,6 +15,7 @@ void IfCommand::doCommand(){
     }
 }
 IfCommand::~IfCommand(){
+	//Delete all the comannds
     for (Expression* c: commands) {
         delete(c);
     }

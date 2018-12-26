@@ -1,0 +1,35 @@
+commit ebe56e02636e0d7c09d89f52f9ddc25f4d98656a
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 19:03:28 2018 +0200
+
+    add Sleepcommand, bug fixed and improve Expression
+
+commit 74f35174ab9d13189cfb1ad19f1443546556ac75
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 19:02:29 2018 +0200
+
+    Add options to read from file script (args to main)
+
+commit 1f4ee3c6682c8939dd537d48512878a6f16fc3e6
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 19:01:04 2018 +0200
+
+    Add Exit command and EnterC command
+
+commit b8736b56ec843102fb7074c16cbb167b5154c4fc
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 18:58:59 2018 +0200
+
+    Expression bugs fixed
+
+commit 2949b1e3b03f1553da79f81e7ecc2956cdd48224
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 18:57:46 2018 +0200
+
+    Add mutex locks and unlock
+
+commit 52f1b492ac9302d86c9487c63997ad94d2daf0fb
+Author: zomry1 <zomry1@gmail.com>
+Date:   Wed Dec 26 18:53:37 2018 +0200
+
+    First Upload

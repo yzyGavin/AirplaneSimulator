@@ -19,13 +19,17 @@ public:
     static void setSocketNumber(int num) {
         sockfd = num;
     }
-
+    /**
+     * the method gets the info about the thread and socket we created
+     */
     static void setOpenDataServer (int* socket, pthread_t* thread) {
         DataServerSocket = *socket;
         th = thread;
         isServerOpen = true;
     }
-
+    /**
+     * the method refurns true if the server is open and false otherwise
+     */
     static bool isOpen() {
         return isServerOpen;
     }

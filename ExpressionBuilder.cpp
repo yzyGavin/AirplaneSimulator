@@ -18,15 +18,19 @@
 #include <string>
 
 using namespace std;
-
+/**
+ * the method adds brackets to expressions with '/' operator
+ */
 void addBrackets(vector<string> &expressions) {
     vector<string>::iterator temp;
     for (vector<string>::iterator it = expressions.begin(); it != expressions.end(); it++) {
+        // if we found a '/'
         if (*it == "/") {
+            //if there isnt ')' after the '/'
             if (*(it+1) != ")") {
                 it = expressions.insert(it + 2, ")");
-
                 temp = it - 3;
+                // find the position for the '('
                 if (temp != expressions.begin() && (temp - 1) != expressions.begin()) {
                     temp = temp - 2;
                     if (*(temp) == "/") {
@@ -55,7 +59,9 @@ void addBrackets(vector<string> &expressions) {
 }
 
 
-
+/**
+ * the method check if there are '-' in the expression and adds brackets accordingly
+ */
 void checkNegative(vector<string> &expressions) {
     //Two cases for negative number , at the beginning of the strings, or after (
     if(expressions[0] == "-") {
@@ -99,7 +105,9 @@ void checkNegative(vector<string> &expressions) {
         lastOperator = false;
     }
 }
-
+/**
+ * the method inserts the strings into the queue according to shunting yard algotirthm
+ */
 queue<string> shuntingYard(vector<string> objects) {
     stack <string> st;
     queue <string> qu;
@@ -136,11 +144,13 @@ queue<string> shuntingYard(vector<string> objects) {
     return qu;
 
 }
-
+/**
+ * the method builds the expression object from the srtings in the queue
+ */
 Expression* createExpression(queue<string> qu) {
     stack<Expression*> st;
     string curr;
-
+    // just the way to move from infix to postfix
     while(!qu.empty()) {
         curr = qu.front();
         qu.pop();
@@ -186,16 +196,11 @@ Expression* createExpression(queue<string> qu) {
     }
     Expression* result = st.top();
     st.pop();
-    /*
-    if (!st.empty()) {
-        //Speical case - we had minus at the end - just sum the expressions
-        Expression* left = st.top();
-        st.pop();
-
-        return new Plus(left, result);
-    }*/
     return result;
 }
+/**
+ * the method checks if a string represents a double
+ */
 bool isNumber(string check) {
     if (MapsHandler::isVarExist(check)) {
         return true;
@@ -207,33 +212,20 @@ bool isNumber(string check) {
         return false;
     }
 }
-
+/**
+ * the metho builds an expression from vector of strings
+ */
 Expression* ExpressionBuilder::getExpression (vector<string>::iterator &it, vector<string>::iterator end) {
     vector<string>::iterator begin = it;
 
     vector<string>::iterator pos = it;
     pos++;
+    //take the string for thewxpression- now more and not less
     while (pos != end && ((*pos).at(0)!='<' && (*pos).at(0)!='>' && (*pos).at(0)!='=') && !((isNumber(*it) && ((*pos) == "(" || isNumber(*pos))))) {
         it++;
         pos++;
     }
     it++;
-
-
-
-
-
-    /**
-    if (*it == "-") {
-        it = it + 2;
-    } else {
-        it++;
-    }
-    while(it != end && (*it == "+" || *it == "-" || *it == "/" || *it == "*")) {
-        //add the number after the symbol and check the next string
-        it = it+2;
-    }
-     */
     vector<string> expressions = vector<string>(begin,it);
     checkNegative(expressions);
     addBrackets(expressions);

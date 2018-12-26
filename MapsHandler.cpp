@@ -11,7 +11,9 @@ map<string, double> MapsHandler::symbolTable;
 map<string, string> MapsHandler::binds;
 map<string, double> MapsHandler::notXML;
 
-
+/**
+ * the method creates the addresses map
+ */
 void MapsHandler::createAddressTable() {
     pthread_mutex_lock(&lock);
     addresses.insert(pair<string,double>("/instrumentation/airspeed-indicator/indicated-speed-kt", 0));
@@ -39,6 +41,9 @@ void MapsHandler::createAddressTable() {
     addresses.insert(pair<string, double>("/engines/engine/rpm", 0));
     pthread_mutex_unlock(&lock);
 }
+/**
+ * the method updates the map with the values the simulator sent us
+ */
 void MapsHandler::updateFromSimulator(vector<double> params) {
     pthread_mutex_lock(&lock);
     addresses.find("/instrumentation/airspeed-indicator/indicated-speed-kt")->second = params.at(0);
@@ -66,6 +71,9 @@ void MapsHandler::updateFromSimulator(vector<double> params) {
     addresses.find("/engines/engine/rpm")->second = params.at(22);
     pthread_mutex_unlock(&lock);
 }
+/**
+ * the method adds/updates values to one of the addresses tables
+ */
 void MapsHandler::addToAddresses(string address,double val) {
     pthread_mutex_lock(&lock);
     if (addresses.find(address) == addresses.end()) {
@@ -81,12 +89,18 @@ void MapsHandler::addToAddresses(string address,double val) {
     }
     pthread_mutex_unlock(&lock);
 }
+/**
+ *  the method checks if the address is in one of the addresses tables
+ */
 bool MapsHandler::isAddressExist(string address) {
     pthread_mutex_lock(&lock);
     pthread_mutex_unlock(&lock);
     return (addresses.find(address) != addresses.end() ||
             notXML.find(address)  != notXML.end());
 }
+/**
+ * the method returns the value of the address
+ */
 double MapsHandler::getValOfAddress (string address) {
     pthread_mutex_lock(&lock);
     if (addresses.find(address) == addresses.end()) {
@@ -102,6 +116,9 @@ double MapsHandler::getValOfAddress (string address) {
     pthread_mutex_unlock(&lock);
     return addresses.find(address)->second;
 }
+/**
+ * the method adds a new var to the symbol table or updates an existing var
+ */
 void MapsHandler::addVar(string varName,double val) {
     if (symbolTable.find(varName) == symbolTable.end()) {
         symbolTable.insert(pair<string, double> (varName, val));
@@ -109,10 +126,15 @@ void MapsHandler::addVar(string varName,double val) {
         symbolTable.find(varName)->second = val;
     }
 }
+/**
+ * the method check if a var is in the symbol table
+ */
 bool MapsHandler::isVarExist(string varName) {
     return (symbolTable.find(varName) != symbolTable.end());
 }
-//ADD LOCK
+/**
+ * the method returns the value of the var
+ */
 double MapsHandler::getVarValue (string varName) {
     pthread_mutex_lock(&lock);
     if (symbolTable.find(varName) == symbolTable.end()) {
@@ -120,12 +142,12 @@ double MapsHandler::getVarValue (string varName) {
         pthread_mutex_unlock(&lock);
         return NULL;
     }
+    // if it binds to another var/address
     if (binds.find(varName) != binds.end()) {
         if(addresses.find(binds.find(varName)->second) != addresses.end() ||
             notXML.find(binds.find(varName)->second)  != notXML.end()) {
                 pthread_mutex_unlock(&lock);
                 return getValOfAddress(binds.find(varName)->second);
-            //}
         }
         else {
             pthread_mutex_unlock(&lock);
@@ -135,13 +157,21 @@ double MapsHandler::getVarValue (string varName) {
     pthread_mutex_unlock(&lock);
     return symbolTable.find(varName)->second;
 }
-
+/**
+ * create a bind
+ */
 void MapsHandler::addBind(string varName,string address) {
     binds.insert(pair<string, string> (varName, address));
 }
+/**
+ * check if the bind exist
+ */
 bool MapsHandler::isBindExist(string varName) {
     return (binds.find(varName) != binds.end());
 }
+/**
+ * return the address the var binds to
+ */
 string MapsHandler::getVarAddress (string varName) {
     if (binds.find(varName) == binds.end()) {
         cout << "wrong input" << endl;

@@ -5,13 +5,17 @@
 #include "SetCommand.h"
 #include "MapsHandler.h"
 #include "ComunicateWithSimulator.h"
-
+/**
+ * constructor
+ */
 SetCommand::SetCommand(vector<string> vec) {
     var = *vec.begin();
     sign = vec.at(1);
     params = vector<string>(vec.begin() + 2, vec.end());
 }
-
+/**
+ * the method sets the value to the var
+ */
 void SetCommand::doCommand() {
     if (sign != "=" || !MapsHandler::isVarExist(var)) {
         cout << "wrong input" << endl;
@@ -30,6 +34,7 @@ void SetCommand::doCommand() {
     double value = ex->calculate();
     delete(ex);
     MapsHandler::addVar(var, value);
+    //if there is a bind - we need to inform all the vars in the bind
     while (MapsHandler::isBindExist(var)) {
         if(MapsHandler::isAddressExist(MapsHandler::getVarAddress(var))) {
             MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);

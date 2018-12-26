@@ -19,6 +19,9 @@ public:
     virtual double calculate() {
         return left->calculate() * right->calculate();
     }
+    /**
+     * delete - allocate memory
+     */
     ~Mul() {
         delete (left);
         delete(right);

@@ -28,7 +28,9 @@
 using namespace std;
 
 
-
+/**
+ * the method splits the line to vector of strings
+*/
 vector<string> lexer(const string &line) {
     vector<string> vec;
     std::size_t prev = 0, pos;
@@ -40,6 +42,7 @@ vector<string> lexer(const string &line) {
             return vec;
         }
     }
+    // we want to split by one of: " +-*/()<>=!{"
     while ((pos = line.find_first_of(" +-*/()<>=!{", prev)) != std::string::npos)
     {
         if (pos > prev) {
@@ -74,6 +77,9 @@ vector<string> lexer(const string &line) {
     }
     return vec;
 }
+/**
+ * creates the commands from the strings
+ */
 Expression* parser(vector<string> &vec, const map<string, CommandFactory*> *commandMap) {
     if (commandMap->find(vec.at(0)) == commandMap->end()) {
         if (vec.at(1) == "=") {
@@ -87,6 +93,9 @@ Expression* parser(vector<string> &vec, const map<string, CommandFactory*> *comm
         return commandMap->at(vec.at(0))->getCommand(params, vector<Expression*>());
     }
 }
+/**
+ * in case we have if/while- create a condition command - with condition and list of commands it should execute
+ */
 Expression* loopParser(vector<string> &vec, const map<string, CommandFactory*> *commandMap, std::istream &in) {
     if (vec.at(1) == "(") {
         if (*(vec.end() - 1) != ")") {
@@ -104,6 +113,7 @@ Expression* loopParser(vector<string> &vec, const map<string, CommandFactory*> *
     getline (in, line);
     currLine = lexer(line);
     do {
+        // if we have another if/while inside
         if (currLine.back() == "{") {
             currLine.pop_back();
             command = loopParser(currLine, commandMap, in);
@@ -122,6 +132,9 @@ Expression* loopParser(vector<string> &vec, const map<string, CommandFactory*> *
     vector<string> params(vec.begin() + 1, vec.end());
     return commandMap->at(vec.at(0))->getCommand(params, commands);
 }
+/**
+ * create the commandFactory- map
+ */
 void createCommandMap(map<string, CommandFactory*>* commandMap) {
     commandMap->insert(pair<string, CommandFactory*>("openDataServer", new OpenDataServerFactory()));
     commandMap->insert(pair<string, CommandFactory*>("connect", new ConnectFactory()));
@@ -132,15 +145,18 @@ void createCommandMap(map<string, CommandFactory*>* commandMap) {
     commandMap->insert(pair<string, CommandFactory*>("=", new SetFactory()));
     commandMap->insert(pair<string, CommandFactory*>("sleep", new SleepFactory()));
 }
+/**
+ * the main func
+ */
 int main(int argc, char *argv[]) {
+    //build the commandFactory map
     map<string, CommandFactory*>* commandMap = new map<string, CommandFactory*>();
     createCommandMap(commandMap);
-    map<string, double> symbolTable;
-    map<string, string> addressTable;
     string line;
 
     bool fromFile = false;
     std::ifstream f;
+    // if we should read the script from the file
     if (argc == 2) {
         f.open(argv[1]);
         fromFile = true;
@@ -159,6 +175,7 @@ int main(int argc, char *argv[]) {
         }
         vector<string> vec = lexer(line);
         Expression* command;
+        // if its a if/while command
         if (vec.back() == "{") {
             vec.pop_back();
             command = loopParser(vec, commandMap, in);

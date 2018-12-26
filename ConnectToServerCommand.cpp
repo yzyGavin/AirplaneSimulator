@@ -16,7 +16,7 @@ void ConnectToServerCommand::doCommand () {
     int sockfd, n;
     struct sockaddr_in serv_addr;
     struct hostent *server;
-    /* Create a socket point */
+    // Create a socket point
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
         perror("ERROR opening socket");
@@ -37,7 +37,7 @@ void ConnectToServerCommand::doCommand () {
         exit(1);
     }
 
-    cout << "connected as client" << endl;
+    //Send to the server handler the socket
     ComunicateWithSimulator::setSocketNumber(sockfd);
     delete (portno);
 }

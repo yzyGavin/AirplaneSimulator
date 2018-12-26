@@ -14,6 +14,9 @@ public:
     SleepCommand(vector<string> params) {
         this->params = params;
     }
+    /**
+     * the method makes the program to sleep for the asked time
+     */
     void doCommand() {
         vector<string>::iterator start = params.begin();
         vector<string>::iterator end = params.end();

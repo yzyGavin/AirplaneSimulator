@@ -5,6 +5,10 @@
 #include "OpenDataServerCommand.h"
 #include "ComunicateWithSimulator.h"
 
+/**
+ * the thread.
+ * @param params - the port and hz
+ */
 void *openServer(void* params) {
     int* arr = (int*)params;
     int newsockfd = *arr;
@@ -45,6 +49,9 @@ void *openServer(void* params) {
     }
     delete(arr);
 }
+/**
+ * the method creates the server and a new thread for it
+ */
 void OpenDataServerCommand::doCommand() {
     vector<string>::iterator it = params.begin();
     // build the first expression - port
@@ -106,6 +113,7 @@ void OpenDataServerCommand::doCommand() {
     MapsHandler::createAddressTable();
 
     char buf;
+    //Wait for first input from the client
     int none = recv(newsockfd,&buf,1,MSG_PEEK);
     //Run the thread for the updating
     pthread_create(&server, nullptr, &openServer, (void*)arr);
