@@ -6,12 +6,8 @@
 #include "ComunicateWithSimulator.h"
 #include "MapsHandler.h"
 int ComunicateWithSimulator::sockfd = -1;
-int ComunicateWithSimulator::DataServerSocket = -1;
-pthread_t* ComunicateWithSimulator::th = 0;
 bool ComunicateWithSimulator::sendToServer(string st, double val) {
     string command = "set " + MapsHandler::getVarAddress(st) + " " + std::to_string(val) + " \r\n";
-
-    //flush(sockfd);
     int n = write(sockfd, command.c_str(), command.length());
 
     if (n < 0) {
@@ -38,17 +34,8 @@ double ComunicateWithSimulator::getFromServer(string address) {
     return stod(result);
 }
 
-void ComunicateWithSimulator::closeAll() {
-    //Close the client socket to the simulator
-    if (sockfd > 0) {
+void ComunicateWithSimulator::closeSocket() {
+    if (sockfd < 0) {
         close(sockfd);
     }
-
-    //Close Data Server Socket
-    if (DataServerSocket > 0) {
-        close(DataServerSocket);
-    }
-
-    //Terminate the thread
-    pthread_exit(th);
 }

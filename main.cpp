@@ -168,8 +168,8 @@ int main(int argc, char *argv[]) {
     delete(it->second);
     it++;*/
 
-    //closeTwoSockets and the thread
-    ComunicateWithSimulator::closeAll();
+    //closeTwoSockets
+    ComunicateWithSimulator::closeSocket();
 
     return 0;
 }
