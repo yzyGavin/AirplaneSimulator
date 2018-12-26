@@ -1,0 +1,3 @@
+/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles/ProjectDemo.dir
+/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles/edit_cache.dir
