@@ -48,6 +48,7 @@ CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o: ../MapsHandler.cpp
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o: ../MapsHandler.h
 
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../Command.h
+CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../ComunicateWithSimulator.h
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../Expression.h
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../ExpressionBuilder.h
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../MapsHandler.h
@@ -82,8 +83,6 @@ CMakeFiles/ProjectDemo.dir/main.cpp.o: ../ComunicateWithSimulator.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../ConditionCommand.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../ConnectFactory.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../ConnectToServerCommand.h
-CMakeFiles/ProjectDemo.dir/main.cpp.o: ../EnterCCommand.h
-CMakeFiles/ProjectDemo.dir/main.cpp.o: ../EnterCFactory.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../Expression.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../ExpressionBuilder.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../IfCommand.h
@@ -96,6 +95,8 @@ CMakeFiles/ProjectDemo.dir/main.cpp.o: ../PrintCommand.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../PrintFactory.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../SetCommand.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../SetFactory.h
+CMakeFiles/ProjectDemo.dir/main.cpp.o: ../SleepCommand.h
+CMakeFiles/ProjectDemo.dir/main.cpp.o: ../SleepFactory.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../VarCommand.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../VarFactory.h
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../WhileFactory.h

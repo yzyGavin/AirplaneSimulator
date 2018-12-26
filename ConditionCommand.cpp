@@ -17,27 +17,31 @@ bool ConditionCommand::isTrue() {
         return false;
     }
     Expression* right = ExpressionBuilder::getExpression(it, params.end());
+    double leftEx = left->calculate();
+    double rightEx = right->calculate();
+    delete left;
+    delete right;
     if (it != params.end()) {
         //we have unused word
         cout << "wrong input" << endl;
         return false;
     }
-    if (sign == ">" && (left->calculate() > right->calculate())) {
+    if (sign == ">" && (leftEx > rightEx)) {
         return true;
     }
-    if (sign == "<" && (left->calculate() < right->calculate())) {
+    if (sign == "<" && (leftEx < rightEx)) {
         return true;
     }
-    if (sign == ">=" && (left->calculate() >= right->calculate())) {
+    if (sign == ">=" && (leftEx >= rightEx)) {
         return true;
     }
-    if (sign == "<=" && (left->calculate() <= right->calculate())) {
+    if (sign == "<=" && (leftEx <= rightEx)) {
         return true;
     }
-    if (sign == "==" && (left->calculate() == right->calculate())) {
+    if (sign == "==" && (leftEx == rightEx)) {
         return true;
     }
-    if (sign == "!=" && (left->calculate() != right->calculate())) {
+    if (sign == "!=" && (leftEx != rightEx)) {
         return true;
     }
     return false;

@@ -11,9 +11,6 @@ void VarCommand::doCommand() {
     }
     string varName = params.at(0);
     if (params.at(2) == "bind") {
-        //FOR TESTING - REMOVE
-        MapsHandler::createAddressTable();
-        //
         string address = "";
         for(vector<string>::iterator it = params.begin() + 3; it != params.end(); it++) {
             address += *it;
@@ -22,19 +19,18 @@ void VarCommand::doCommand() {
             address.erase(address.find("\""),1);
             address.erase(address.find("\""),1);
         }
-        if (!MapsHandler::isAddressExsist(address) && !MapsHandler::isVarExsist(address)) {
+        if (!MapsHandler::isAddressExist(address) && !MapsHandler::isVarExist(address)) {
             MapsHandler::addToAddresses(address,0);
             //Added
             MapsHandler::addVar(varName,MapsHandler::getValOfAddress(address));
             MapsHandler::addBind(varName,address);
             //
         }
-        if (!MapsHandler::isAddressExsist(address)) {
+        if (!MapsHandler::isAddressExist(address)) {
             MapsHandler::addBind(varName, address);
             MapsHandler::addVar(varName, MapsHandler::getVarValue(address));
         }
         else {
-            cout << "is a address bind varName: " << varName << " address: "  << address << endl;
             MapsHandler::addBind(varName, address);
             MapsHandler::addVar(varName, MapsHandler::getValOfAddress(address));
         }

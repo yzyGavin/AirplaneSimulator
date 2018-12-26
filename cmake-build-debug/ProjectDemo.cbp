@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug"/>
+				<Option working_dir="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug"/>
+				<Option working_dir="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProjectDemo">
-				<Option output="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/ProjectDemo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug"/>
+				<Option output="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/ProjectDemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectDemo"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectDemo"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProjectDemo/fast">
-				<Option output="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/ProjectDemo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug"/>
+				<Option output="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/ProjectDemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,150 +67,150 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectDemo/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectDemo/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/zomry1/Desktop/ProjectDemo/cmake-build-debug"/>
+				<Option working_dir="/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Command.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Command.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/CommandExpression.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/CommandExpression.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/CommandFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ConditionCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ConditionCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ConnectFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ConnectFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Div.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Div.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/EnterCCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Expression.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/EnterCFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Expression.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/IfCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/IfCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/IfCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/IfFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/IfCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/LoopCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/IfFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/LoopCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/LoopCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/LoopCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/MapsHandler.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Minus.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/MapsHandler.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Mul.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Minus.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Mul.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Plus.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/OpenDataServerFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/PrintCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Plus.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/PrintCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/PrintCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/PrintFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/PrintCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/SetCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/PrintFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/SetCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/SetCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/SetFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/SetCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/SleepCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/SetFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/SleepFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Val.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Val.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Var.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/Var.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/VarCommand.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/VarCommand.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/VarCommand.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/VarCommand.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/VarFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/VarFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/WhileFactory.h">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/WhileFactory.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/main.cpp">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/main.cpp">
 			<Option target="ProjectDemo"/>
 		</Unit>
-		<Unit filename="/home/zomry1/Desktop/ProjectDemo/CMakeLists.txt">
+		<Unit filename="/home/zomry1/Desktop/ProjectDemoNew/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

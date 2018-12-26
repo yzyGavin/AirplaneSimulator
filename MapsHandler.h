@@ -12,23 +12,24 @@
 
 using namespace std;
 
-static map<string, double> addresses;
-static map<string, double> symbolTable;
-static map<string, string> binds;
-static map<string, double> notXML;
+
 
 class MapsHandler {
+    static  map<string,double> addresses;
+    static map<string, double> symbolTable;
+    static map<string, string> binds;
+    static map<string, double> notXML;
 public:
     static void createAddressTable();
-    static void updateFromSimulater(vector<double> params);
+    static void updateFromSimulator(vector<double> params);
     static void addToAddresses(string address,double val);//
-    static bool isAddressExsist(string address);//
+    static bool isAddressExist(string address);//
     static double getValOfAddress (string address);//
     static void addVar(string varName,double val);//
-    static bool isVarExsist(string varName);
+    static bool isVarExist(string varName);
     static double getVarValue (string varName);
     static void addBind(string varName,string address);
-    static bool isBindExsist(string varName);
+    static bool isBindExist(string varName);
     static string getVarAddress (string varName);
 };
 

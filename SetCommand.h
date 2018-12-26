@@ -14,6 +14,8 @@ class SetCommand: public Command {
 public:
     SetCommand(vector<string> vec);
     void doCommand();
+
+    ~SetCommand(){}
 };
 
 #endif //PROJECTDEMO_SETCOMMAND_H

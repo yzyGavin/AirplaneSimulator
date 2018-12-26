@@ -43,10 +43,10 @@ RM = /home/zomry1/Desktop/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zomry1/Desktop/ProjectDemo
+CMAKE_SOURCE_DIR = /home/zomry1/Desktop/ProjectDemoNew
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zomry1/Desktop/ProjectDemo/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ProjectDemo.dir/depend.make
@@ -59,159 +59,159 @@ include CMakeFiles/ProjectDemo.dir/flags.make
 
 CMakeFiles/ProjectDemo.dir/main.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjectDemo.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/main.cpp.o -c /home/zomry1/Desktop/ProjectDemo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjectDemo.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/main.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/main.cpp
 
 CMakeFiles/ProjectDemo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/main.cpp > CMakeFiles/ProjectDemo.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/main.cpp > CMakeFiles/ProjectDemo.dir/main.cpp.i
 
 CMakeFiles/ProjectDemo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/main.cpp -o CMakeFiles/ProjectDemo.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/main.cpp -o CMakeFiles/ProjectDemo.dir/main.cpp.s
 
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o: ../MapsHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o -c /home/zomry1/Desktop/ProjectDemo/MapsHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/MapsHandler.cpp
 
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/MapsHandler.cpp > CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/MapsHandler.cpp > CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.i
 
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/MapsHandler.cpp -o CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/MapsHandler.cpp -o CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.s
 
 CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o: ../ComunicateWithSimulator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o -c /home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.cpp
 
 CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.cpp > CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.cpp > CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.i
 
 CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.cpp -o CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.cpp -o CMakeFiles/ProjectDemo.dir/ComunicateWithSimulator.cpp.s
 
 CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o: ../ConditionCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/ConditionCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/ConditionCommand.cpp > CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.cpp > CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/ConditionCommand.cpp -o CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.cpp -o CMakeFiles/ProjectDemo.dir/ConditionCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o: ../IfCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/IfCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/IfCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/IfCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/IfCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/IfCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/IfCommand.cpp > CMakeFiles/ProjectDemo.dir/IfCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/IfCommand.cpp > CMakeFiles/ProjectDemo.dir/IfCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/IfCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/IfCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/IfCommand.cpp -o CMakeFiles/ProjectDemo.dir/IfCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/IfCommand.cpp -o CMakeFiles/ProjectDemo.dir/IfCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o: ../LoopCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/LoopCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/LoopCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/LoopCommand.cpp > CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/LoopCommand.cpp > CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/LoopCommand.cpp -o CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/LoopCommand.cpp -o CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o: ../OpenDataServerCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.cpp > CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.cpp > CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.cpp -o CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.cpp -o CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o: ../ConnectToServerCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.cpp > CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.cpp > CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.cpp -o CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.cpp -o CMakeFiles/ProjectDemo.dir/ConnectToServerCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o: ../SetCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/SetCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/SetCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/SetCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/SetCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/SetCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/SetCommand.cpp > CMakeFiles/ProjectDemo.dir/SetCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/SetCommand.cpp > CMakeFiles/ProjectDemo.dir/SetCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/SetCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/SetCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/SetCommand.cpp -o CMakeFiles/ProjectDemo.dir/SetCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/SetCommand.cpp -o CMakeFiles/ProjectDemo.dir/SetCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o: ../ExpressionBuilder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o -c /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.cpp
 
 CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.cpp > CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.cpp > CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.i
 
 CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.cpp -o CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.cpp -o CMakeFiles/ProjectDemo.dir/ExpressionBuilder.cpp.s
 
 CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o: ../VarCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/VarCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/VarCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/VarCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/VarCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/VarCommand.cpp > CMakeFiles/ProjectDemo.dir/VarCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/VarCommand.cpp > CMakeFiles/ProjectDemo.dir/VarCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/VarCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/VarCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/VarCommand.cpp -o CMakeFiles/ProjectDemo.dir/VarCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/VarCommand.cpp -o CMakeFiles/ProjectDemo.dir/VarCommand.cpp.s
 
 CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o: CMakeFiles/ProjectDemo.dir/flags.make
 CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o: ../PrintCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemo/PrintCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o -c /home/zomry1/Desktop/ProjectDemoNew/PrintCommand.cpp
 
 CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemo/PrintCommand.cpp > CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zomry1/Desktop/ProjectDemoNew/PrintCommand.cpp > CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.i
 
 CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemo/PrintCommand.cpp -o CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zomry1/Desktop/ProjectDemoNew/PrintCommand.cpp -o CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.s
 
 # Object files for target ProjectDemo
 ProjectDemo_OBJECTS = \
@@ -245,7 +245,7 @@ ProjectDemo: CMakeFiles/ProjectDemo.dir/VarCommand.cpp.o
 ProjectDemo: CMakeFiles/ProjectDemo.dir/PrintCommand.cpp.o
 ProjectDemo: CMakeFiles/ProjectDemo.dir/build.make
 ProjectDemo: CMakeFiles/ProjectDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ProjectDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ProjectDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjectDemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -258,6 +258,6 @@ CMakeFiles/ProjectDemo.dir/clean:
 .PHONY : CMakeFiles/ProjectDemo.dir/clean
 
 CMakeFiles/ProjectDemo.dir/depend:
-	cd /home/zomry1/Desktop/ProjectDemo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zomry1/Desktop/ProjectDemo /home/zomry1/Desktop/ProjectDemo /home/zomry1/Desktop/ProjectDemo/cmake-build-debug /home/zomry1/Desktop/ProjectDemo/cmake-build-debug /home/zomry1/Desktop/ProjectDemo/cmake-build-debug/CMakeFiles/ProjectDemo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zomry1/Desktop/ProjectDemoNew /home/zomry1/Desktop/ProjectDemoNew /home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug /home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug /home/zomry1/Desktop/ProjectDemoNew/cmake-build-debug/CMakeFiles/ProjectDemo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ProjectDemo.dir/depend
 

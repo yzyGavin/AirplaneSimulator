@@ -16,6 +16,7 @@ using namespace std;
 class Command {
 public:
     virtual void doCommand() = 0;
+    virtual ~Command(){}
 };
 
 #endif //PROJECTDEMO_COMMAND_H

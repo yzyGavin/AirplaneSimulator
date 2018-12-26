@@ -18,6 +18,44 @@
 #include <string>
 
 using namespace std;
+
+void addBrackets(vector<string> &expressions) {
+    vector<string>::iterator temp;
+    for (vector<string>::iterator it = expressions.begin(); it != expressions.end(); it++) {
+        if (*it == "/") {
+            if (*(it+1) != ")") {
+                it = expressions.insert(it + 2, ")");
+
+                temp = it - 3;
+                if (temp != expressions.begin() && (temp - 1) != expressions.begin()) {
+                    temp = temp - 2;
+                    if (*(temp) == "/") {
+                        //bool first = true;
+                        int count = 1;
+                        while (*temp != ")" && !(count == 0)) {
+                            if (*temp == "(") {
+                                count--;
+                            } else if (*temp == ")") {
+                                count++;
+                            }
+                            if (temp != expressions.begin()) {
+                                temp--;
+                            }
+                        }
+                        temp = expressions.insert(temp, "(");
+                    } else {
+                        temp = expressions.insert(temp, "(");
+                    }
+                } else {
+                    expressions.insert(it - 3, "(");
+                }
+            }
+        }
+    }
+}
+
+
+
 void checkNegative(vector<string> &expressions) {
     //Two cases for negative number , at the beginning of the strings, or after (
     if(expressions[0] == "-") {
@@ -50,11 +88,12 @@ void checkNegative(vector<string> &expressions) {
         }
         if(lastOperator && *it == "-") {
             //Curr we on the -: it-1 is before the -
-            next = expressions.insert(it-1, "(");
+            next = expressions.insert(it, "(");
             //next is on the ( : next+1 is after the (
             next = expressions.insert(next+1, "0");
             //next is on the ( : next+ is after the - and the number
-            next = expressions.insert(next+2, ")");
+            next = expressions.insert(next+3, ")");
+            it = next;
         }
         lastBracket = false;
         lastOperator = false;
@@ -67,7 +106,7 @@ queue<string> shuntingYard(vector<string> objects) {
     for(vector<string>::iterator it = objects.begin(); it != objects.end(); it++) {
         if (*it == "+" || *it == "-" ) {
             //They have a greater precendence
-            while(!st.empty() && (st.top() == "/" || st.top() == "*")) {
+            while(!st.empty() && (st.top() == "/" || st.top() == "*" || st.top() == "-" || st.top() == "+")) {
                 qu.emplace(st.top());
                 st.pop();
             }
@@ -158,7 +197,7 @@ Expression* createExpression(queue<string> qu) {
     return result;
 }
 bool isNumber(string check) {
-    if (MapsHandler::isVarExsist(check)) {
+    if (MapsHandler::isVarExist(check)) {
         return true;
     }
     try {
@@ -197,6 +236,7 @@ Expression* ExpressionBuilder::getExpression (vector<string>::iterator &it, vect
      */
     vector<string> expressions = vector<string>(begin,it);
     checkNegative(expressions);
+    addBrackets(expressions);
     //Now I have begin for the beginning of the expression and it point to the end of it
     queue<string> express = shuntingYard(expressions);
     return createExpression(express);

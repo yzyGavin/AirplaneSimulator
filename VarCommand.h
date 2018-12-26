@@ -17,6 +17,8 @@ public:
     }
 
     virtual void doCommand();
+
+    ~VarCommand(){}
 };
 
 #endif //PROJECTDEMO_VARCOMMAND_H

@@ -5,7 +5,9 @@
 #include "PrintCommand.h"
 
 void PrintCommand::doCommand() {
-    if (params.at(0).at(0) == '"' && params.at(0).back() == '"') {
+    if (params.at(0).at(0) == '"' && (params.end() - 1)->back() == '"') {
+        params.at(0) = params.at(0).substr(1, std::string::npos);
+        (params.end() - 1)->pop_back();
         cout << params.at(0) << endl;
     } else {
         vector<string>::iterator it = params.begin();

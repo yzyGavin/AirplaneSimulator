@@ -24,6 +24,8 @@ public:
         this->params = params;
     }
     virtual void doCommand();
+
+    ~ConnectToServerCommand(){}
 };
 
 #endif //PROJECTDEMO_CONNECTTOSERVERCOMMAND_H

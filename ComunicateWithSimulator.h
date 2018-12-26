@@ -12,12 +12,26 @@ using namespace std;
 class ComunicateWithSimulator {
 public:
     static int sockfd;
+    static int DataServerSocket;
+    static pthread_t* th;
+    static bool isServerOpen;
+
     static void setSocketNumber(int num) {
         sockfd = num;
     }
+
+    static void setOpenDataServer (int* socket, pthread_t* thread) {
+        DataServerSocket = *socket;
+        th = thread;
+        isServerOpen = true;
+    }
+
+    static bool isOpen() {
+        return isServerOpen;
+    }
     static bool sendToServer(string st, double val);
     static double getFromServer(string address);
-    static void closeSocket();
+    static void closeAll();
 };
 
 #endif //PROJECTDEMO_COMUNICATEWITHSIMULATOR_H

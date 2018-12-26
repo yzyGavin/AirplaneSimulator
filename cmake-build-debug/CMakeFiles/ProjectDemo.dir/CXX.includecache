@@ -6,53 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 vector
-/home/zomry1/Desktop/ProjectDemo/vector
+/home/zomry1/Desktop/ProjectDemoNew/vector
 string
-/home/zomry1/Desktop/ProjectDemo/string
+/home/zomry1/Desktop/ProjectDemoNew/string
 Expression.h
-/home/zomry1/Desktop/ProjectDemo/Expression.h
+/home/zomry1/Desktop/ProjectDemoNew/Expression.h
 iostream
-/home/zomry1/Desktop/ProjectDemo/iostream
+/home/zomry1/Desktop/ProjectDemoNew/iostream
 ExpressionBuilder.h
-/home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h
+/home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.h
 
-/home/zomry1/Desktop/ProjectDemo/CommandExpression.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandExpression.h
 Expression.h
-/home/zomry1/Desktop/ProjectDemo/Expression.h
+/home/zomry1/Desktop/ProjectDemoNew/Expression.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 vector
 -
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 string
-/home/zomry1/Desktop/ProjectDemo/string
+/home/zomry1/Desktop/ProjectDemoNew/string
 CommandExpression.h
-/home/zomry1/Desktop/ProjectDemo/CommandExpression.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandExpression.h
 
-/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
+/home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.h
 string
 -
 
-/home/zomry1/Desktop/ProjectDemo/ConditionCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 
-/home/zomry1/Desktop/ProjectDemo/ConnectFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/ConnectFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 ConnectToServerCommand.h
-/home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/ConnectToServerCommand.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 ComunicateWithSimulator.h
-/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
+/home/zomry1/Desktop/ProjectDemoNew/ComunicateWithSimulator.h
 stdio.h
 -
 stdlib.h
@@ -70,41 +70,31 @@ sys/socket.h
 pthread.h
 -
 
-/home/zomry1/Desktop/ProjectDemo/EnterCCommand.h
-Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
-
-/home/zomry1/Desktop/ProjectDemo/EnterCFactory.h
-CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
-EnterCCommand.h
-/home/zomry1/Desktop/ProjectDemo/EnterCCommand.h
-
-/home/zomry1/Desktop/ProjectDemo/Expression.h
+/home/zomry1/Desktop/ProjectDemoNew/Expression.h
 string
 -
 
-/home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h
+/home/zomry1/Desktop/ProjectDemoNew/ExpressionBuilder.h
 vector
 -
 Expression.h
-/home/zomry1/Desktop/ProjectDemo/Expression.h
+/home/zomry1/Desktop/ProjectDemoNew/Expression.h
 
-/home/zomry1/Desktop/ProjectDemo/IfCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/IfCommand.h
 ConditionCommand.h
-/home/zomry1/Desktop/ProjectDemo/ConditionCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/IfFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/IfFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 IfCommand.h
-/home/zomry1/Desktop/ProjectDemo/IfCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/IfCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/LoopCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/LoopCommand.h
 ConditionCommand.h
-/home/zomry1/Desktop/ProjectDemo/ConditionCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/ConditionCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
+/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.h
 iostream
 -
 map
@@ -114,7 +104,7 @@ string
 vector
 -
 
-/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.h
 netinet/in.h
 -
 string.h
@@ -122,55 +112,67 @@ string.h
 unistd.h
 -
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 MapsHandler.h
-/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
+/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.h
 
-/home/zomry1/Desktop/ProjectDemo/OpenDataServerFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 OpenDataServerCommand.h
-/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/PrintCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/PrintCommand.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 
-/home/zomry1/Desktop/ProjectDemo/PrintFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/PrintFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 PrintCommand.h
-/home/zomry1/Desktop/ProjectDemo/PrintCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/PrintCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/SetCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/SetCommand.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 
-/home/zomry1/Desktop/ProjectDemo/SetFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/SetFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 SetCommand.h
-/home/zomry1/Desktop/ProjectDemo/SetCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/SetCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/VarCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/SleepCommand.h
+unistd.h
+-
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
+
+/home/zomry1/Desktop/ProjectDemoNew/SleepFactory.h
+CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
+SleepCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/SleepCommand.h
+
+/home/zomry1/Desktop/ProjectDemoNew/VarCommand.h
+Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 MapsHandler.h
-/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
+/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.h
 
-/home/zomry1/Desktop/ProjectDemo/VarFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/VarFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 VarCommand.h
-/home/zomry1/Desktop/ProjectDemo/VarCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/VarCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/WhileFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/WhileFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 LoopCommand.h
-/home/zomry1/Desktop/ProjectDemo/LoopCommand.h
+/home/zomry1/Desktop/ProjectDemoNew/LoopCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/main.cpp
+/home/zomry1/Desktop/ProjectDemoNew/main.cpp
 iostream
 -
 vector
@@ -178,27 +180,27 @@ vector
 map
 -
 MapsHandler.h
-/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
+/home/zomry1/Desktop/ProjectDemoNew/MapsHandler.h
 Command.h
-/home/zomry1/Desktop/ProjectDemo/Command.h
+/home/zomry1/Desktop/ProjectDemoNew/Command.h
 OpenDataServerFactory.h
-/home/zomry1/Desktop/ProjectDemo/OpenDataServerFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/OpenDataServerFactory.h
 ConnectFactory.h
-/home/zomry1/Desktop/ProjectDemo/ConnectFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/ConnectFactory.h
 IfFactory.h
-/home/zomry1/Desktop/ProjectDemo/IfFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/IfFactory.h
 WhileFactory.h
-/home/zomry1/Desktop/ProjectDemo/WhileFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/WhileFactory.h
 CommandFactory.h
-/home/zomry1/Desktop/ProjectDemo/CommandFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/CommandFactory.h
 PrintFactory.h
-/home/zomry1/Desktop/ProjectDemo/PrintFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/PrintFactory.h
 SetFactory.h
-/home/zomry1/Desktop/ProjectDemo/SetFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/SetFactory.h
 VarFactory.h
-/home/zomry1/Desktop/ProjectDemo/VarFactory.h
-EnterCFactory.h
-/home/zomry1/Desktop/ProjectDemo/EnterCFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/VarFactory.h
+SleepFactory.h
+/home/zomry1/Desktop/ProjectDemoNew/SleepFactory.h
 stdio.h
 -
 stdlib.h

@@ -13,7 +13,7 @@ SetCommand::SetCommand(vector<string> vec) {
 }
 
 void SetCommand::doCommand() {
-    if (sign != "=" || !MapsHandler::isVarExsist(var)) {
+    if (sign != "=" || !MapsHandler::isVarExist(var)) {
         cout << "wrong input" << endl;
         return;
     }
@@ -30,46 +30,13 @@ void SetCommand::doCommand() {
     double value = ex->calculate();
     delete(ex);
     MapsHandler::addVar(var, value);
-    /*if (MapsHandler::isBindExsist(var)) {
-        //MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
-        ComunicateWithSimulator::sendToServer(var, value);
-    }
-    while (MapsHandler::isBindExsist(var)) {
-        if(MapsHandler::isBindExsist(MapsHandler::getVarAddress(var))) {
-            var = MapsHandler::getVarAddress(var);
-            MapsHandler::addVar(var, value);
-        }
-        else {
+    while (MapsHandler::isBindExist(var)) {
+        if(MapsHandler::isAddressExist(MapsHandler::getVarAddress(var))) {
             MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
-            ComunicateWithSimulator::sendToServer(var, value);
-        }
-    }*//*
-    while (MapsHandler::isBindExsist(var)) {
-        if (MapsHandler::isBindExsist(MapsHandler::getVarAddress(var))) {
-            var = MapsHandler::getVarAddress(var);
-            MapsHandler::addVar(var, value);
-        }
-        else if ()
-        else {
-            MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
-            ComunicateWithSimulator::sendToServer(var, value);
-        }
-    }*/
-    while (MapsHandler::isBindExsist(var)) {
-        if(MapsHandler::isAddressExsist(MapsHandler::getVarAddress(var))) {
-            /*var = MapsHandler::getVarAddress(var);
-            MapsHandler::addVar(var, value);*/
-            MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
-            cout << MapsHandler::getVarAddress(var) << " val is:" << MapsHandler::getVarValue(var);
             ComunicateWithSimulator::sendToServer(var, value);
             break;
         }
-        /*else if (MapsHandler::isBindExsist(MapsHandler::getVarAddress(var))) {
-
-        }*/
         else {
-            /*MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
-            ComunicateWithSimulator::sendToServer(var, value);*/
             var = MapsHandler::getVarAddress(var);
             MapsHandler::addVar(var, value);
         }

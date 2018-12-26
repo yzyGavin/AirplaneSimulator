@@ -4,8 +4,17 @@
 
 #include "MapsHandler.h"
 #include "ComunicateWithSimulator.h"
+
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+map<string, double> MapsHandler::addresses;
+map<string, double> MapsHandler::symbolTable;
+map<string, string> MapsHandler::binds;
+map<string, double> MapsHandler::notXML;
+
+
 void MapsHandler::createAddressTable() {
-    addresses.insert(pair<string, double>("/instrumentation/airspeed-indicator/indicated-speed-kt", 0));
+    pthread_mutex_lock(&lock);
+    addresses.insert(pair<string,double>("/instrumentation/airspeed-indicator/indicated-speed-kt", 0));
     addresses.insert(pair<string, double>("/instrumentation/altimeter/indicated-altitude-ft", 0));
     addresses.insert(pair<string, double>("/instrumentation/altimeter/pressure-alt-ft", 0));
     addresses.insert(pair<string, double>("/instrumentation/attitude-indicator/indicated-pitch-deg", 0));
@@ -26,30 +35,43 @@ void MapsHandler::createAddressTable() {
     addresses.insert(pair<string, double>("/controls/flight/elevator", 0));
     addresses.insert(pair<string, double>("/controls/flight/rudder", 0));
     addresses.insert(pair<string, double>("/controls/flight/flaps", 0));
-    addresses.insert(pair<string, double>("/controls/engines/engine/throttle", 0));
+    addresses.insert(pair<string, double>("/controls/engines/current-engine/throttle", 0));
     addresses.insert(pair<string, double>("/engines/engine/rpm", 0));
+    pthread_mutex_unlock(&lock);
 }
-void MapsHandler::updateFromSimulater(vector<double> params) {
-    addresses.begin()->second = params.at(21);
+void MapsHandler::updateFromSimulator(vector<double> params) {
+    pthread_mutex_lock(&lock);
+    addresses.find("/instrumentation/airspeed-indicator/indicated-speed-kt")->second = params.at(0);
+    addresses.find("/instrumentation/altimeter/indicated-altitude-ft")->second = params.at(1);
+    addresses.find("/instrumentation/altimeter/pressure-alt-ft")->second = params.at(2);
+    addresses.find("/instrumentation/attitude-indicator/indicated-pitch-deg")->second = params.at(3);
+    addresses.find("/instrumentation/attitude-indicator/indicated-roll-deg")->second = params.at(4);
+    addresses.find("/instrumentation/attitude-indicator/internal-pitch-deg")->second = params.at(5);
+    addresses.find("/instrumentation/attitude-indicator/internal-roll-deg")->second = params.at(6);
+    addresses.find("/instrumentation/encoder/indicated-altitude-ft")->second = params.at(7);
+    addresses.find("/instrumentation/encoder/pressure-alt-ft")->second = params.at(8);
+    addresses.find("/instrumentation/gps/indicated-altitude-ft")->second = params.at(9);
+    addresses.find("/instrumentation/gps/indicated-ground-speed-kt")->second = params.at(10);
+    addresses.find("/instrumentation/gps/indicated-vertical-speed")->second = params.at(11);
+    addresses.find("/instrumentation/heading-indicator/indicated-heading-deg")->second = params.at(12);
+    addresses.find("/instrumentation/magnetic-compass/indicated-heading-deg")->second = params.at(13);
+    addresses.find("/instrumentation/slip-skid-ball/indicated-slip-skid")->second = params.at(14);
+    addresses.find("/instrumentation/turn-indicator/indicated-turn-rate")->second = params.at(15);
+    addresses.find("/instrumentation/vertical-speed-indicator/indicated-speed-fpm")->second = params.at(16);
+    addresses.find("/controls/flight/aileron")->second = params.at(17);
+    addresses.find("/controls/flight/elevator")->second = params.at(18);
+    addresses.find("/controls/flight/rudder")->second = params.at(19);
+    addresses.find("/controls/flight/flaps")->second = params.at(20);
+    addresses.find("/controls/engines/current-engine/throttle")->second = params.at(21);
     addresses.find("/engines/engine/rpm")->second = params.at(22);
-    map<string, double>::iterator it = addresses.find("/instrumentation/airspeed-indicator/indicated-speed-kt");
-    int i = 0;
-    for (; it != addresses.end(); it++, i++) {
-        it->second = params.at(i);
-    }
-    it = addresses.find("/engines/engine/rpm");
-    map<string ,double>::iterator start = addresses.begin();
-    start++;
-    for (; start != it; start++, i++) {
-        start->second = params.at(i);
-    }
+    pthread_mutex_unlock(&lock);
 }
 void MapsHandler::addToAddresses(string address,double val) {
+    pthread_mutex_lock(&lock);
     if (addresses.find(address) == addresses.end()) {
         if(notXML.find(address) == notXML.end()) {
-            //Changed
-            //notXML.insert(pair<string, double>(address, val));
-            notXML.insert(pair<string, double>(address, ComunicateWithSimulator::getFromServer(address)));
+           // notXML.insert(pair<string, double>(address, ComunicateWithSimulator::getFromServer(address)));
+            notXML.insert(pair<string, double>(address, 0));
         }
         else {
             notXML.find(address)->second = val;
@@ -57,20 +79,27 @@ void MapsHandler::addToAddresses(string address,double val) {
     } else {
         addresses.find(address)->second = val;
     }
+    pthread_mutex_unlock(&lock);
 }
-bool MapsHandler::isAddressExsist(string address) {
+bool MapsHandler::isAddressExist(string address) {
+    pthread_mutex_lock(&lock);
+    pthread_mutex_unlock(&lock);
     return (addresses.find(address) != addresses.end() ||
             notXML.find(address)  != notXML.end());
 }
 double MapsHandler::getValOfAddress (string address) {
+    pthread_mutex_lock(&lock);
     if (addresses.find(address) == addresses.end()) {
         if (notXML.find(address) == notXML.end()) {
             cout << "wrong input" << endl;
+            pthread_mutex_unlock(&lock);
             return NULL;
         }
-        notXML.find(address)->second = ComunicateWithSimulator::getFromServer(address);
+        //notXML.find(address)->second = ComunicateWithSimulator::getFromServer(address);
+        pthread_mutex_unlock(&lock);
         return notXML.find(address)->second;
     }
+    pthread_mutex_unlock(&lock);
     return addresses.find(address)->second;
 }
 void MapsHandler::addVar(string varName,double val) {
@@ -80,34 +109,37 @@ void MapsHandler::addVar(string varName,double val) {
         symbolTable.find(varName)->second = val;
     }
 }
-bool MapsHandler::isVarExsist(string varName) {
+bool MapsHandler::isVarExist(string varName) {
     return (symbolTable.find(varName) != symbolTable.end());
 }
+//ADD LOCK
 double MapsHandler::getVarValue (string varName) {
+    pthread_mutex_lock(&lock);
     if (symbolTable.find(varName) == symbolTable.end()) {
         cout << "wrong input" << endl;
+        pthread_mutex_unlock(&lock);
         return NULL;
     }
     if (binds.find(varName) != binds.end()) {
-        cout << "bind founded" << endl;
-        if(MapsHandler::isAddressExsist(binds.find(varName)->second)) {
-            cout << "DIrect" << endl;
-            //return addresses.find(binds.find(varName)->second)->second;
-            return getValOfAddress(binds.find(varName)->second);
+        if(addresses.find(binds.find(varName)->second) != addresses.end() ||
+            notXML.find(binds.find(varName)->second)  != notXML.end()) {
+                pthread_mutex_unlock(&lock);
+                return getValOfAddress(binds.find(varName)->second);
+            //}
         }
         else {
-            cout << "inDirect " << binds.find(varName)->second << endl;
+            pthread_mutex_unlock(&lock);
             return MapsHandler::getVarValue(binds.find(varName)->second);
         }
     }
-    cout << "not bind" << endl;
+    pthread_mutex_unlock(&lock);
     return symbolTable.find(varName)->second;
 }
 
 void MapsHandler::addBind(string varName,string address) {
     binds.insert(pair<string, string> (varName, address));
 }
-bool MapsHandler::isBindExsist(string varName) {
+bool MapsHandler::isBindExist(string varName) {
     return (binds.find(varName) != binds.end());
 }
 string MapsHandler::getVarAddress (string varName) {

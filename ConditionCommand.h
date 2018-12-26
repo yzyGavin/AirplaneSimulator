@@ -13,6 +13,7 @@ public:
     ConditionCommand (vector<string> vec) {
         params = vec;
     }
+
 protected:
     bool isTrue();
 };
