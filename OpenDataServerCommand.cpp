@@ -4,7 +4,7 @@
 
 #include "OpenDataServerCommand.h"
 
-
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 
 void handle_input_params(string line) {
     int place = line.find(" ");
@@ -56,6 +56,7 @@ void *openServer(void* params) {
     vector<double> vec;
     MapsHandler::createAddressTable();
     while (true) {
+        pthread_mutex_lock(&lock);
         int pos,prev = 0;
         /* If connection is established then start communicating */
         n = read(newsockfd,buffer,400);
@@ -99,8 +100,8 @@ void *openServer(void* params) {
             vec.push_back(stod(line.substr(prev, std::string::npos)));
         }*/
         MapsHandler::updateFromSimulater(vec);
-        // when the
-        //sleep(1.0/h);
+        sleep(1.0/h);
+        pthread_mutex_unlock(&lock);
     }
     delete(arr);
 }

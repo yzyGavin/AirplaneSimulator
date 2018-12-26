@@ -3,7 +3,6 @@
 //
 
 #include "ConnectToServerCommand.h"
-
 void ConnectToServerCommand::doCommand () {
     string ip = params.at(0);
     // build the port
@@ -37,6 +36,8 @@ void ConnectToServerCommand::doCommand () {
         perror("ERROR connecting");
         exit(1);
     }
+
+    cout << "connected as client" << endl;
     ComunicateWithSimulator::setSocketNumber(sockfd);
     delete (portno);
 }

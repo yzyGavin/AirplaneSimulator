@@ -18,10 +18,6 @@ iostream
 ExpressionBuilder.h
 /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h
 
-/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
-string
--
-
 /home/zomry1/Desktop/ProjectDemo/Expression.h
 string
 -
@@ -42,15 +38,19 @@ string
 vector
 -
 
-/home/zomry1/Desktop/ProjectDemo/SetCommand.cpp
-SetCommand.h
-/home/zomry1/Desktop/ProjectDemo/SetCommand.h
-MapsHandler.h
-/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
-ComunicateWithSimulator.h
-/home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
+/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.cpp
+OpenDataServerCommand.h
+/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.h
 
-/home/zomry1/Desktop/ProjectDemo/SetCommand.h
+/home/zomry1/Desktop/ProjectDemo/OpenDataServerCommand.h
+netinet/in.h
+-
+string.h
+-
+unistd.h
+-
 Command.h
 /home/zomry1/Desktop/ProjectDemo/Command.h
+MapsHandler.h
+/home/zomry1/Desktop/ProjectDemo/MapsHandler.h
 

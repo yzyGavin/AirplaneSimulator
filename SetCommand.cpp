@@ -56,12 +56,13 @@ void SetCommand::doCommand() {
         }
     }*/
     while (MapsHandler::isBindExsist(var)) {
-        if(MapsHandler::isAddressExsist(var)) {
+        if(MapsHandler::isAddressExsist(MapsHandler::getVarAddress(var))) {
             /*var = MapsHandler::getVarAddress(var);
             MapsHandler::addVar(var, value);*/
             MapsHandler::addToAddresses(MapsHandler::getVarAddress(var), value);
             cout << MapsHandler::getVarAddress(var) << " val is:" << MapsHandler::getVarValue(var);
             ComunicateWithSimulator::sendToServer(var, value);
+            break;
         }
         /*else if (MapsHandler::isBindExsist(MapsHandler::getVarAddress(var))) {
 

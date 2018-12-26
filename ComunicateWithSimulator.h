@@ -16,6 +16,7 @@ public:
         sockfd = num;
     }
     static bool sendToServer(string st, double val);
+    static double getFromServer(string address);
 };
 
 #endif //PROJECTDEMO_COMUNICATEWITHSIMULATOR_H
