@@ -117,6 +117,12 @@
 		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Div.h">
 			<Option target="ProjectDemo"/>
 		</Unit>
+		<Unit filename="/home/zomry1/Desktop/ProjectDemo/EnterCCommand.h">
+			<Option target="ProjectDemo"/>
+		</Unit>
+		<Unit filename="/home/zomry1/Desktop/ProjectDemo/EnterCFactory.h">
+			<Option target="ProjectDemo"/>
+		</Unit>
 		<Unit filename="/home/zomry1/Desktop/ProjectDemo/Expression.h">
 			<Option target="ProjectDemo"/>
 		</Unit>

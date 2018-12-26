@@ -23,8 +23,11 @@ void VarCommand::doCommand() {
             address.erase(address.find("\""),1);
         }
         if (!MapsHandler::isAddressExsist(address) && !MapsHandler::isVarExsist(address)) {
-            cout << "wrong input" << endl;
-            return;
+            MapsHandler::addToAddresses(address,0);
+            //Added
+            MapsHandler::addVar(varName,MapsHandler::getValOfAddress(address));
+            MapsHandler::addBind(varName,address);
+            //
         }
         if (!MapsHandler::isAddressExsist(address)) {
             MapsHandler::addBind(varName, address);

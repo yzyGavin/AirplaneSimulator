@@ -13,6 +13,7 @@
 
 class OpenDataServerCommand : public Command {
     vector<string> params;
+
 public:
     OpenDataServerCommand (vector<string> params) {
         this->params = params;

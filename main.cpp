@@ -12,6 +12,7 @@
 #include "PrintFactory.h"
 #include "SetFactory.h"
 #include "VarFactory.h"
+#include "EnterCFactory.h"
 
 
 #include <stdio.h>
@@ -22,6 +23,8 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <pthread.h>
+#include <fstream>
+
 using namespace std;
 
 
@@ -117,15 +120,29 @@ void createCommandMap(map<string, CommandFactory*> &commandMap) {
     commandMap.insert(pair<string, CommandFactory*>("while", new WhileFactory()));
     commandMap.insert(pair<string, CommandFactory*>("print", new PrintFactory()));
     commandMap.insert(pair<string, CommandFactory*>("=", new SetFactory()));
+    commandMap.insert(pair<string, CommandFactory*>("enterc", new EnterCFactory()));
 }
-int main() {
+int main(int argc, char *argv[]) {
     map<string, CommandFactory*> commandMap;
     createCommandMap(commandMap);
     map<string, double> symbolTable;
     map<string, string> addressTable;
     string line;
+
+    bool fromFile = false;
+    std::ifstream f;
+    if (argc == 2) {
+        f.open(argv[1]);
+        fromFile = true;
+    }
+    std::istream &in = (argc == 2) ? f : std::cin;
+
+
     while (true) {
-        getline (cin, line);
+        getline (in, line);
+        if (!fromFile &&line == "exit"  || fromFile && in.eof()) {
+            break;
+        }
         vector<string> vec = lexer(line);
         Expression* command;
         if (vec.back() == "{") {
@@ -138,9 +155,21 @@ int main() {
         command->calculate();
         delete(command);
     }
-    while (commandMap.size() > 0) {
-        delete(commandMap.begin()->second);
-    }
-    //closeTwoSockets
+
+    //Delete the factory
+    map<string,CommandFactory*>::iterator it= commandMap.begin();
+
+    /*delete(it->second);
+    it++;
+    delete(it->second);
+    it++;
+    delete(it->second);
+    it++;
+    delete(it->second);
+    it++;*/
+
+    //closeTwoSockets and the thread
+    ComunicateWithSimulator::closeAll();
+
     return 0;
 }

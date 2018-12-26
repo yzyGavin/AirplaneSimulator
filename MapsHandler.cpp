@@ -3,7 +3,7 @@
 //
 
 #include "MapsHandler.h"
-
+#include "ComunicateWithSimulator.h"
 void MapsHandler::createAddressTable() {
     addresses.insert(pair<string, double>("/instrumentation/airspeed-indicator/indicated-speed-kt", 0));
     addresses.insert(pair<string, double>("/instrumentation/altimeter/indicated-altitude-ft", 0));
@@ -46,21 +46,32 @@ void MapsHandler::updateFromSimulater(vector<double> params) {
 }
 void MapsHandler::addToAddresses(string address,double val) {
     if (addresses.find(address) == addresses.end()) {
-        addresses.insert(pair<string, double>(address, val));
+        if(notXML.find(address) == notXML.end()) {
+            //Changed
+            //notXML.insert(pair<string, double>(address, val));
+            notXML.insert(pair<string, double>(address, ComunicateWithSimulator::getFromServer(address)));
+        }
+        else {
+            notXML.find(address)->second = val;
+        }
     } else {
         addresses.find(address)->second = val;
     }
 }
 bool MapsHandler::isAddressExsist(string address) {
-    return (addresses.find(address) != addresses.end());
+    return (addresses.find(address) != addresses.end() ||
+            notXML.find(address)  != notXML.end());
 }
 double MapsHandler::getValOfAddress (string address) {
     if (addresses.find(address) == addresses.end()) {
-        cout << "wrong input" << endl;
-        return NULL;
-    } else {
-        return addresses.find(address)->second;
+        if (notXML.find(address) == notXML.end()) {
+            cout << "wrong input" << endl;
+            return NULL;
+        }
+        notXML.find(address)->second = ComunicateWithSimulator::getFromServer(address);
+        return notXML.find(address)->second;
     }
+    return addresses.find(address)->second;
 }
 void MapsHandler::addVar(string varName,double val) {
     if (symbolTable.find(varName) == symbolTable.end()) {
@@ -81,7 +92,8 @@ double MapsHandler::getVarValue (string varName) {
         cout << "bind founded" << endl;
         if(MapsHandler::isAddressExsist(binds.find(varName)->second)) {
             cout << "DIrect" << endl;
-            return addresses.find(binds.find(varName)->second)->second;
+            //return addresses.find(binds.find(varName)->second)->second;
+            return getValOfAddress(binds.find(varName)->second);
         }
         else {
             cout << "inDirect " << binds.find(varName)->second << endl;

@@ -44,10 +44,12 @@ CMakeFiles/ProjectDemo.dir/LoopCommand.cpp.o
  /home/zomry1/Desktop/ProjectDemo/LoopCommand.cpp
  /home/zomry1/Desktop/ProjectDemo/LoopCommand.h
 CMakeFiles/ProjectDemo.dir/MapsHandler.cpp.o
+ /home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
  /home/zomry1/Desktop/ProjectDemo/MapsHandler.cpp
  /home/zomry1/Desktop/ProjectDemo/MapsHandler.h
 CMakeFiles/ProjectDemo.dir/OpenDataServerCommand.cpp.o
  /home/zomry1/Desktop/ProjectDemo/Command.h
+ /home/zomry1/Desktop/ProjectDemo/ComunicateWithSimulator.h
  /home/zomry1/Desktop/ProjectDemo/Expression.h
  /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h
  /home/zomry1/Desktop/ProjectDemo/MapsHandler.h
@@ -82,6 +84,8 @@ CMakeFiles/ProjectDemo.dir/main.cpp.o
  /home/zomry1/Desktop/ProjectDemo/ConditionCommand.h
  /home/zomry1/Desktop/ProjectDemo/ConnectFactory.h
  /home/zomry1/Desktop/ProjectDemo/ConnectToServerCommand.h
+ /home/zomry1/Desktop/ProjectDemo/EnterCCommand.h
+ /home/zomry1/Desktop/ProjectDemo/EnterCFactory.h
  /home/zomry1/Desktop/ProjectDemo/Expression.h
  /home/zomry1/Desktop/ProjectDemo/ExpressionBuilder.h
  /home/zomry1/Desktop/ProjectDemo/IfCommand.h
